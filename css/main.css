@@ -1,0 +1,343 @@
+* {
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 28px;
+}
+body {
+  margin: 0;
+}
+
+/* responsive */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="column-"] {
+  float: left;
+  padding: 15px;
+}
+.column-1 {
+  width: 16.6667%;
+}
+.column-2 {
+  width: 33.3333%;
+}
+.column-3 {
+  width: 50%;
+}
+.column-4 {
+  width: 66.6667%;
+}
+.column-5 {
+  width: 83.3334%;
+}
+.column-6 {
+  width: 100%;
+}
+
+.ml-1-column {
+  margin-left: 16.6667%;
+}
+.ml-2-column {
+  margin-left: 33.3333%;
+}
+
+.bg-white {
+  background-color: white;
+}
+.bg-orange {
+  background-color: rgb(225, 85, 24);
+}
+.bg-dark-brown {
+  background-color: #ef980a;
+}
+.bg-light-brown {
+  background-color: #fab142;
+}
+.bg-cream {
+  background-color: #fef6e9;
+}
+.bg-dark-cream {
+  background-color: #fad193;
+}
+.bg-light-cream {
+  background-color: #fdeed7;
+}
+
+.full-width {
+  width: 100%;
+  float: left;
+}
+
+.main > div {
+  min-height: 100vh;
+  display: flex;
+}
+
+.magazine-landing {
+  background: url("../images/magaizine-landing-bg.jpg");
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.logo {
+  text-align: center;
+  position: relative;
+  padding-top: 0vh;
+}
+.logo .image {
+  background-color: rgb(239, 152, 10);
+  border-radius: 50%;
+  padding: 120px 50px;
+  color: white;
+  width: 100%;
+}
+.logo .image > img {
+  height: 40vh;
+  border-radius: 100%;
+  box-shadow: 2px 2px 50px rgb(225, 85, 24);
+}
+
+.navbar-sticky {
+  position: absolute;
+  bottom: 0;
+}
+.navbar-sticky > .column-4 {
+  padding: 0;
+}
+.nav-links {
+  background: #ffffff;
+}
+.nav-links > a {
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+.nav-links > .active {
+  border-bottom: solid 10px rgba(255, 255, 255, 0.5);
+  padding-bottom: 10px;
+}
+[class*="nav-item-"]:hover {
+  opacity: 0.9;
+  animation-duration: all 1s;
+}
+[class*="nav-item-"] {
+  width: 25%;
+  float: left;
+  cursor: pointer;
+  animation-duration: all 1s;
+}
+.nav-links .nav-item-1 {
+  background-color: rgb(250, 177, 66);
+}
+.nav-links .nav-item-2 {
+  background-color: rgb(239, 152, 10);
+}
+.nav-links .nav-item-3 {
+  background-color: rgb(225, 85, 24);
+}
+.nav-links .nav-item-4 {
+  background-color: rgb(31, 87, 26);
+}
+
+.fruit-tray {
+  position: absolute;
+  left: 0;
+  top: 80vh;
+}
+
+.lemon {
+  background-color: #98ad20;
+}
+.magazine-edition {
+  min-height: 70vh;
+  position: relative;
+  float: left;
+}
+
+.magazine-edition > .image {
+  position: absolute;
+  top: -30%;
+  left: 15%;
+  width: 70%;
+  height: 60vh;
+  background-image: url("../images/magaizine-editon-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.3);
+}
+.latest-edition {
+  z-index: 2;
+  position: absolute;
+  background-color: rgb(31, 87, 26);
+  color: #ffffff;
+  margin-top: 10%;
+  margin-left: 25%;
+  width: 25%;
+  min-height: 60%;
+  text-align: left;
+  padding: 4%;
+  box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.2);
+}
+.latest-edition > .title {
+  font-weight: bolder;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.previous-editions {
+  position: absolute;
+  color: #ffffff;
+  margin-top: 20%;
+  margin-left: 57%;
+  width: 25%;
+  padding: 4%;
+}
+
+.recipes {
+  height: 100vh;
+  background-image: url("../images/recipe-intercontinental.jpg");
+  background-size: 60%;
+  background-position: 40% 50%;
+  background-repeat: no-repeat;
+}
+.recipes > div {
+  height: 100vh;
+}
+.recipes > .recipe-links > div {
+  min-height: 20%;
+  vertical-align: middle;
+  text-align: center;
+  padding: 20%;
+  font-weight: lighter;
+  font-size: 25px;
+}
+.recipes .recipe-description {
+  max-height: 100vh;
+  overflow: auto;
+}
+.recipes .recipe-title {
+  padding-left: 0;
+}
+.recipes .recipe-title > h2 {
+  padding-left: 100px;
+  padding-bottom: 25px;
+  margin-top: 30px;
+  text-align: left;
+  border-bottom: solid 5px #ef960a;
+}
+.recipe-body {
+  padding: 0;
+  padding-left: 100px;
+}
+.ingredient-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+.recipe-body li {
+  color: #777777;
+  font-weight: 300;
+  font-size: 23px;
+}
+
+.green-flower {
+  background-image: url("../images/magaizine-proposition-bg-2.jpeg");
+  background-position: center;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 69, 0, 0.1);
+  background-blend-mode: screen;
+  background-size: cover;
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.3);
+  letter-spacing: 5px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.green-flower h1 {
+  font-size: 65px;
+  margin-top: 50px;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.footer {
+  background-color: rgb(197, 66, 19);
+  background-image: url("../images/magaizine-footer-bg.svg");
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+.footer-logo {
+  text-align: right;
+}
+.footer-logo svg {
+  width: 40px;
+}
+.footer .text-div {
+  padding-top: 220px;
+}
+.footer .text-div > span {
+  font-size: 20px;
+}
+.footer .orange-text {
+  font-weight: bold;
+  color: #fd911e;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.social-media-icons > img {
+  width: 40px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+button {
+  width: 100%;
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  font-weight: bolder;
+  transition: all 0.2s;
+}
+button:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+button.white {
+  color: rgb(31, 87, 26);
+  background-color: white;
+  border: solid 2px transparent;
+}
+button.white:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+button.transparent {
+  color: white;
+  background-color: transparent;
+  border: solid 3px white;
+}
+button.transparent:hover {
+  color: rgb(31, 87, 26);
+  background: white;
+  border-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  [class*="column-"] {
+    width: 100%;
+  }
+  .hidden-mid-screen {
+    display: none !important;
+  }
+}
