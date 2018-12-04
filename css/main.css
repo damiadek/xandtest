@@ -87,12 +87,21 @@ body {
   position: relative;
   padding-top: 0vh;
 }
+.header-logo {
+  padding: 200px 50px;
+}
 .logo .image {
   background-color: rgb(239, 152, 10);
   border-radius: 50%;
-  padding: 120px 50px;
+  padding: 140px 50px;
   color: white;
   width: 100%;
+}
+.logo .image > h1 {
+  font-size: 80px;
+}
+.logo .image > span {
+  /* font-size: 20px; */
 }
 .logo .image > img {
   height: 40vh;
@@ -100,10 +109,6 @@ body {
   box-shadow: 2px 2px 50px rgb(225, 85, 24);
 }
 
-.navbar-sticky {
-  position: absolute;
-  bottom: 0;
-}
 .navbar-sticky > .column-4 {
   padding: 0;
 }
@@ -147,6 +152,15 @@ body {
   position: absolute;
   left: 0;
   top: 80vh;
+}
+
+#about {
+  width: 80%;
+  padding-bottom: 45vh;
+}
+#about > div > p {
+  font-size: 50px;
+  margin-top: 300px;
 }
 
 .lemon {
@@ -244,22 +258,24 @@ body {
   font-size: 23px;
 }
 
+.well-feeding {
+  padding: 10px;
+}
+
 .green-flower {
   background-image: url("../images/magaizine-proposition-bg-2.jpeg");
   background-position: center;
-  height: 30vh;
+  min-height: 30vh;
   background-repeat: no-repeat;
-  background-color: rgba(255, 69, 0, 0.1);
+  background-color: rgba(255, 69, 0, 0.3);
   background-blend-mode: screen;
   background-size: cover;
   box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.3);
   letter-spacing: 5px;
-  font-size: 30px;
   font-weight: bold;
+  padding: 10px;
 }
 .green-flower h1 {
-  font-size: 65px;
-  margin-top: 50px;
   color: white;
   letter-spacing: 5px;
 }
@@ -276,21 +292,20 @@ body {
   position: relative;
 }
 .footer-logo {
-  text-align: right;
+  text-align: center;
 }
 .footer-logo svg {
   width: 40px;
 }
-.footer .text-div {
-  padding-top: 220px;
+.footer > .logo {
+  height: auto;
 }
-.footer .text-div > span {
-  font-size: 20px;
+.footer .image {
+  display: inline-block;
 }
 .footer .orange-text {
   font-weight: bold;
   color: #fd911e;
-  font-size: 25px;
   letter-spacing: 5px;
 }
 .social-media-icons > img {
@@ -333,11 +348,216 @@ button.transparent:hover {
   border-color: white;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   [class*="column-"] {
     width: 100%;
   }
+  .hidden-small-screen {
+    display: none !important;
+  }
+  .header-logo {
+    margin: 0;
+    padding-left: 90px;
+  }
+  .header-logo > * {
+    display: inline-block;
+    position: absolute;
+  }
+  .header-logo > div.image {
+    left: 10px;
+    top: 10px;
+  }
+  .header-logo > div.dropdown {
+    right: 10px;
+    top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background: #ef980a;
+  }
+  .logo .image {
+    padding: 108px 7px;
+    width: 78%;
+  }
+  .magazine-landing > div {
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+    background: white;
+  }
+  .logo {
+    height: 70px;
+  }
+  .navbar-sticky {
+    top: 70px;
+    transition: all 0.4s;
+    display: none;
+  }
+  .ml-1-column,
+  .ml-2-column {
+    margin: 0;
+  }
+  .magazine-landing {
+    background-size: 114%;
+  }
+  .main > div:first-child {
+    height: 42vh;
+    min-height: 42vh;
+  }
+  .header-logo {
+    padding: 10px 50px;
+    padding: 5px;
+  }
+  .logo .image {
+    padding: 33px 22px;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    color: transparent;
+  }
+  .logo .image > h1 {
+    font-size: 30px;
+  }
+  .logo .image > span {
+    font-size: 15px;
+  }
+  .navbar-sticky > .ml-2-column {
+    margin-left: 0;
+  }
+  .navbar-sticky {
+    /* position: relative; */
+    transition: all 0.4s;
+  }
+  .nav-links > a {
+    width: 100%;
+  }
+  #about {
+    width: 100%;
+    padding-bottom: 20vh;
+  }
+  #about > div > p {
+    font-size: 30px;
+    margin-top: 0;
+  }
+  .magazine-edition > .image {
+    width: 90%;
+    left: 5%;
+  }
+  .latest-edition {
+    margin-top: 10%;
+    width: 75%;
+    margin-left: 12.5%;
+  }
+  .latest-edition > .title {
+    font-size: 40px;
+  }
+  .previous-editions {
+    margin-top: 90%;
+    width: 75%;
+    margin-left: 12.5%;
+  }
+  .recipes {
+    height: auto;
+  }
+  .recipe-body,
+  .recipes .recipe-title > h2 {
+    padding-left: 50px;
+  }
+
+  .text-div,
+  .copyright > div,
+  .text-div > * {
+    padding: 0 !important;
+    font-size: 20px !important;
+    padding-top: 30px !important;
+    text-align: center !important;
+  }
+  .copyright {
+    padding: 0px !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .magazine-edition > .image {
+    top: -10%;
+  }
+  .latest-edition {
+    position: relative;
+  }
+  .latest-edition > button {
+    margin-top: 50px;
+  }
+  .previous-editions {
+    margin-top: 30px;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 800px) {
   .hidden-mid-screen {
     display: none !important;
+  }
+  .navbar-sticky {
+    position: absolute;
+    bottom: 0;
+  }
+  .well-feeding {
+    padding: 100px;
+  }
+  .green-flower {
+    /* height: 30vh; */
+    letter-spacing: 5px;
+    background-color: rgba(255, 69, 0, 0.1);
+    font-size: 30px;
+  }
+  .green-flower h1 {
+    font-size: 65px;
+    margin-top: 50px;
+  }
+
+  .footer-logo {
+    text-align: right;
+  }
+  .footer-logo svg {
+    width: 40px;
+  }
+  .footer .text-div {
+    padding-top: 220px;
+  }
+  .footer .text-div > span {
+    font-size: 20px;
+  }
+  .footer .orange-text {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .header-logo {
+    margin-left: 16.6667%;
+    width: 66.6667%;
+    padding: 0;
+  }
+  div.magazine-landing {
+    min-height: 65vh;
+    background-size: cover;
+  }
+  .fruit-tray {
+    top: 40vh;
+    min-height: 50vh;
+  }
+  .fruit-tray > img {
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .logo .image {
+    padding: 50px 55px;
+  }
+  .green-flower {
+    height: auto;
+    text-align: center;
   }
 }

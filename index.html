@@ -31,13 +31,16 @@
   <body>
     <div class="full-width main">
       <div class="magazine-landing">
-        <div class="logo full-width wow fadeIn">
-          <div class="column-2 ml-2-column" style="padding: 200px 50px;">
+        <div class="logo full-width">
+          <div class="column-2 ml-2-column header-logo">
             <div class="image">
-              <h1 class="wow fadeIn" style="font-size: 80px">Logo</h1>
+              <h1 class="wow fadeIn">Logo</h1>
               <span class="wow fadeIn" style="font-weight: 100;">
                 Publishers of Nigeria's first food and beverages magazine
               </span>
+            </div>
+            <div class="hidden-mid-screen dropdown">
+              <img src="./images/dropdown.svg" height="20px;" alt="nav" />
             </div>
           </div>
         </div>
@@ -52,9 +55,9 @@
           </div>
         </div>
       </div>
-      <div class="fruit-tray hidden-mid-screen">
+      <div class="fruit-tray hidden-small-screen">
         <img
-          src="./images//magaizine-fruit-tray.png"
+          src="./images/magaizine-fruit-tray.png"
           width="auto"
           height="900px"
           alt="fruit tray"
@@ -62,13 +65,9 @@
       </div>
       <div class="bg-cream">
         <div class="column-4 ml-2-column">
-          <div class="row" style="width: 80%; padding-bottom: 45vh;">
+          <div class="row" id="about">
             <div class="column-6">
-              <p
-                id="about"
-                class="wow fadeInUp"
-                style="font-size: 50px; margin-top: 300px; color:#eca074;"
-              >
+              <p class="wow fadeInUp" style="color:#eca074;">
                 Xand is Nigeria's first of it's kind food magazine positioned as
                 a nutritional and culinary manual, for discerning Nigerians, who
                 love the exciting art of cookery, as well as the 'wining &
@@ -143,7 +142,10 @@
       </div>
     </div>
     <div class="full-width recipes" id="recipes">
-      <div class="column-1 bg-white recipe-links" style="padding: 0;">
+      <div
+        class="column-1 bg-white recipe-links hidden-small-screen"
+        style="padding: 0;"
+      >
         <div class="bg-orange wow fadeInUp">African Cuisine</div>
         <div class="bg-dark-brown wow fadeInUp" data-wow-delay=".2s">
           Dessert
@@ -186,7 +188,7 @@
           </ul>
           <h6 style="margin: 0;font-size: 20px;">
             Prep Time:
-            <span style="font-weight: 200;font-size: 15px;"> < 7mins</span>
+            <span style="font-weight: 200;font-size: 15px;"> &lt; 7mins</span>
           </h6>
           <ul>
             <li>Peel yam, cube it, wash it, and set it aside.</li>
@@ -194,12 +196,12 @@
             <li>Wash oporo and soak, then, set aside</li>
           </ul>
         </div>
+        <div class="column-6 hidden-mid-screen">
+          <button class="white">view all recipes</button>
+        </div>
       </div>
     </div>
-    <div
-      class="full-width well-feeding bg-light-cream"
-      style="padding: 100px;text-align: center;"
-    >
+    <div class="full-width well-feeding bg-light-cream">
       <div class="green-flower full-width">
         <h1>Well-feeding for family "Well-being"</h1>
         <p style="font-size: 20px; font-weight: bolder; color: #e58a16;">
@@ -232,7 +234,7 @@
             class="column-1 text-div"
             style="padding-left: 50px; text-align: left"
           >
-            <span class="orange-text">FOLLOW US</span><br />
+            <span class="orange-text"> FOLLOW US </span> <br />
             <span class="social-media-icons">
               <img
                 src="./images/social_icon_facebook_white.svg"
@@ -246,14 +248,14 @@
             </span>
           </div>
           <div
-            class="column-1 text-div"
+            class="column-1 text-div hidden-small-screen"
             style="text-align: right; padding-right: 50px;"
           >
             <span> SEND A <br />MESSAGE </span>
           </div>
         </div>
         <div
-          class="row"
+          class="row copyright"
           style="padding-left: 30px; padding-right: 30px; padding-top: 50px;"
         >
           <div class="column-2" style="text-align: left; font-size: 20px;">
